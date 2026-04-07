@@ -1,0 +1,187 @@
+/* ===== GLOBAL ===== */
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* ===== APP CONTAINER ===== */
+.app {
+  text-align: center;
+  padding: 20px;
+  min-height: 100vh;
+  transition: all 0.3s ease;
+}
+
+/* ===== DARK MODE ===== */
+.app.dark {
+  background-color: white;
+  color: rgb(12, 1, 1);
+}
+
+/* ===== LIGHT MODE ===== */
+.app.light {
+  background-color: #0a0000;
+  color: white;
+}
+
+/* ===== TITLE ===== */
+h1 {
+  color: #1db954;
+  margin-bottom: 20px;
+}
+
+/* ===== SEARCH BOX ===== */
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  padding: 10px;
+  width: 200px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+}
+
+/* Input Themes */
+.app.dark .search-box input {
+  background: #282828;
+  color: white;
+}
+
+.app.light .search-box input {
+  background: #ffffff;
+  color: black;
+  border: 1px solid #ccc;
+}
+
+/* ===== BUTTONS ===== */
+button {
+  padding: 10px 15px;
+  border-radius: 20px;
+  border: none;
+  background: #1db954;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+button:hover {
+  background: #17a44b;
+}
+
+/* ===== LYRICS BOX ===== */
+.lyrics-box {
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 60%;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* Lyrics Themes */
+.app.dark .lyrics-box {
+  background: #181818;
+  color: white;
+}
+
+.app.light .lyrics-box {
+  background: #ffffff;
+  color: black;
+}
+
+/* ===== LYRICS LINE ===== */
+.line {
+  text-align: center;
+  margin: 8px 0;
+  font-size: 16px;
+}
+
+/* ===== VIDEO ===== */
+.video {
+  margin-top: 20px;
+}
+
+/* ===== FAVORITES & HISTORY ===== */
+.favorites,
+.history {
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 10px;
+  width: 60%;
+}
+
+/* Section Themes */
+.app.dark .favorites,
+.app.dark .history {
+  background: #181818;
+  color: white;
+}
+
+.app.light .favorites,
+.app.light .history {
+  background: #ffffff;
+  color: black;
+}
+
+/* ===== ITEMS ===== */
+.fav-item,
+.history-item {
+  padding: 8px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* Item Themes */
+.app.dark .fav-item,
+.app.dark .history-item {
+  background: #282828;
+  color: white;
+}
+
+.app.light .fav-item,
+.app.light .history-item {
+  background: #e0e0e0;
+  color: black;
+}
+
+/* Hover Effects */
+.app.dark .fav-item:hover,
+.app.dark .history-item:hover {
+  background: #333;
+}
+
+.app.light .fav-item:hover,
+.app.light .history-item:hover {
+  background: #ccc;
+}
+
+/* ===== ERROR & LOADER ===== */
+.error {
+  color: red;
+}
+
+.loader {
+  color: #1db954;
+}
+
+.yt-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 15px;
+  background: #ff0000;
+  color: white;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.yt-link:hover {
+  background: #cc0000;
+}
